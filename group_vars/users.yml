@@ -1,0 +1,15 @@
+users:
+  - name: 'john'
+    groups: 'wheel'
+    shell: '/bin/bash'
+    state: 'present'
+
+  - name: 'bob'
+    groups: ''
+    shell: '/bin/bash'
+    state: 'present'
+
+  - name: 'alice'
+    groups: ''
+    shell: '/bin/bash'
+    state: 'present'

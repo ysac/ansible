@@ -1,0 +1,6 @@
+- hosts: all
+  sudo: yes
+  vars_files:
+    - group_vars/users.yml
+  roles:
+    - base

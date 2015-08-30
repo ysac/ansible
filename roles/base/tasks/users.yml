@@ -1,0 +1,17 @@
+- name: setup users
+  user:
+    name={{item.name}}
+    groups={{item.groups}}
+    shell={{item.shell}}
+    state={{item.state}}
+  with_items:
+    users
+    #john
+    #alice
+
+- name: setup authorized keys
+  authorized_key:
+    user={{item.name}}
+    key="{{lookup('file', '../../../group_vars/pubkeys/id_rsa.pub.' + item.name)}}"
+  with_items:
+    users
