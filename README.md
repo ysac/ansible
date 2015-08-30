@@ -82,7 +82,7 @@ msg: Aborting, target uses selinux but python bindings (libselinux-python) aren'
 * 対象ホストを確認する  
 `$ ansible-playbook playbook/servers_local.yml --list-hosts`
 
-* 対象タスクを確認する
+* 対象タスクを確認する  
 `$ ansible-playbook playbook/servers_local.yml --list-task`
 
 * Dry run  
