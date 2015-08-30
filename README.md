@@ -14,7 +14,7 @@ $ cat hosts
 default
 ```
 
-## ディレクトリ改装
+## ディレクトリ構成
 
 ```bash
 .
@@ -76,28 +76,28 @@ msg: Aborting, target uses selinux but python bindings (libselinux-python) aren'
 
 [Ansible サーバ管理メモ - Qiita](http://qiita.com/Machi427/items/b3c0ed5f8a2cd3a8236e)
 
-* 文法チェック
+* 文法チェック  
 `$ ansible-playbook playbook/servers_local.yml --syntax-check`
 
-* 対象ホストを確認する
+* 対象ホストを確認する  
 `$ ansible-playbook playbook/servers_local.yml --list-hosts`
 
 * 対象タスクを確認する
 `$ ansible-playbook playbook/servers_local.yml --list-task`
 
-* Dry run
+* Dry run  
 `$ ansible-playbook playbook/servers_local.yml --check`
 
-* step 実行
+* step 実行  
 `$ ansible-playbook playbook/servers_local.yml --step`
 
-* ホスト指定実行
+* ホスト指定実行  
 `$ansible-playbook playbook/servers_local.yml -l [hostname]`
 
-* タグ指定実行
+* タグ指定実行  
 `$ ansible-playbook playbook/servers_local.yml --tags=XXX`
 
-* 接続テスト (インベントリやホストの切り替え後に接続テストする）
+* 接続テスト (インベントリやホストの切り替え後に接続テストする）  
 `$ ansible-playbook playbook/ping.yml`
 
 
